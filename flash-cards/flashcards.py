@@ -1,3 +1,6 @@
+# Starting Message
+print("Welcome to 'Guess the Capital', where we'll be testing your Middle Eastern country knowledge. Let's begin!\n")
+
 # Importing the JSON Module from Python3
 import json
 
@@ -21,7 +24,7 @@ for i in data["cards"]:
         print(f"Current Score: {score}/{total}")
 
 # Adding an End-Game Message
-print(f"Thank you for playing! You scored a total of {score} points out of {total}.")
+print(f"Thank you for playing! You scored a total of {score} points out of {total}.\n")
 
 # Adding to the End-Game Message based on the User's Score
 if score == total:
@@ -31,4 +34,4 @@ if score > total / 2:
     print("Good job! You passed with over 50%.")
 
 else:
-    print("Grab yourself a map and start studying your capitals! Good luck next time.")
+    print("Grab yourself a map and start studying your capitals! Better luck for next time.")
